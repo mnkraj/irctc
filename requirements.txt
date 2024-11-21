@@ -1,6 +1,5 @@
 numpy
 opencv-python-headless
 selenium
-base64
 streamlit
 pytesseract

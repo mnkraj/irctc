@@ -37,6 +37,7 @@ def login(id, pwd):
             EC.element_to_be_clickable((By.LINK_TEXT, "LOGIN"))
         )
         login_button.click()
+        st.write("Login Started")
 
         # Enter user credentials
         WebDriverWait(driver, 10).until(

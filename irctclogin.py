@@ -32,6 +32,7 @@ def login(id, pwd):
     driver = webdriver.Chrome(options=chrome_options)
     driver.get("https://www.google.com")
     try:
+        st.write("Page Loaded")
         # Click on the login button
         login_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.LINK_TEXT, "LOGIN"))

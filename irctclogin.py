@@ -30,7 +30,7 @@ chrome_options.add_argument("--headless")
 # Function to handle login
 def login(id, pwd):
     driver = webdriver.Chrome(options=chrome_options)
-    driver.get("https://www.irctc.co.in/nget/train-search")
+    driver.get("https://www.google.com")
     try:
         # Click on the login button
         login_button = WebDriverWait(driver, 10).until(

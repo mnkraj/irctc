@@ -21,14 +21,15 @@ password = os.getenv("password")
 
 # Selenium WebDriver setup
 chrome_options = Options()
-chrome_options.add_argument("--window-size=1920,1080")
-chrome_options.add_argument("--disable-gpu")
+chrome_options.add_argument("--headless")
+# chrome_options.add_argument("--window-size=1920,1080")
+# chrome_options.add_argument("--disable-gpu")
 
-service = Service()
+# service = Service()
 
 # Function to handle login
 def login(id, pwd):
-    driver = webdriver.Chrome(service=service, options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
     driver.get("https://www.irctc.co.in/nget/train-search")
     try:
         # Click on the login button
